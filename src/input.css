@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .status_inner {
+        height: inherit;
+        width: 0;
+        background-color: oklch(39.8% 0.195 277.366);
+        border-radius: 2rem;
+        transition: all 200ms ease-in-out;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .trans {
+        transition: all 500ms ease 100ms;
+    }
+
+    #nav-item:hover {
+        border-bottom: 4px solid oklch(45.7% 0.24 277.023);
+    }
+}
